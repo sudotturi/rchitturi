@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import Login from "./components/login/index";
-
+import { BrowserRouter as Router } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Routes from "./utils/Routes";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <React.StrictMode>
-    <Login />
-  </React.StrictMode>,
+  <Router>
+    <div className="App">
+      <Routes />
+    </div>
+  </Router>,
   rootElement
 );

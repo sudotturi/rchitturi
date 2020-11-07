@@ -1,77 +1,96 @@
 import React, { Component } from "react";
 import "./login.css";
-import { Button } from "react-bootstrap";
-
+import { InfoCircle } from "react-bootstrap-icons";
+import { Button, Form } from "react-bootstrap";
+import {
+  faFacebook,
+  faTwitter,
+  faGoogle
+} from "@fortawesome/free-brands-svg-icons";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+const eye = <FontAwesomeIcon icon={faEye} />;
+const eyeSlash = <FontAwesomeIcon icon={faEyeSlash} />;
 class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isRevealPass: false,
+      passValOne: "",
+      passValTwo: ""
+    };
+  }
   render() {
+    const { isRevealPass } = this.state;
+    var togglePassword = (event) => {
+      this.setState({ isRevealPass: !isRevealPass });
+    };
     return (
-      <div class="limiter">
-        <div class="container-login100">
-          <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-            <form method="POST">
-              <div class="container">
-                <h3 class="signin">Log In</h3>
-                <div class="error-message" id="div">
-                  <h5 class="error-message-title">
-                    Incorrect username or password
-                  </h5>
-                  <p class="error-message-description">
+      <div className="limiter">
+        <div className="container-login100">
+          <div className="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+            <Form method="POST">
+              <div className="container">
+                <h3 className="signin">Log In</h3>
+                <div className="error-message" id="div" hidden={"false"}>
+                  <h6 className="error-message-title">
+                    <InfoCircle color="red" /> Incorrect username or password
+                  </h6>
+                  <p className="error-message-description">
                     Check that you have entered the correct username and
                     password and try again.
                   </p>
                 </div>
-                <input
-                  type="text"
-                  label="Email"
-                  placeholder="Enter Email"
-                  style={{ width: "100%" }}
-                  id="Email"
-                  required
-                  name="Email"
-                ></input>
-                <input
-                  label="Password"
-                  type="Password"
-                  placeholder="Enter password"
-                  style={{ width: "100%" }}
-                  id="pass"
-                  pattern=".{8,}"
-                  required
-                  name="Password"
-                ></input>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter email"
+                    required
+                  />
+                </Form.Group>
+                <div className="pass-wrapper">
+                  <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control
+                      type={isRevealPass ? "text" : "password"}
+                      placeholder="Password"
+                      required
+                    ></Form.Control>
+                  </Form.Group>
+                  <i onClick={togglePassword} className="pash">
+                    {isRevealPass ? eye : eyeSlash}
+                  </i>
+                </div>
                 <hr></hr>
-                <Button variant="primary">Primary</Button> Log In
+                <Button variant="primary" type="submit" id="loginButton">
+                  Log In
+                </Button>
               </div>
               <div class="txt1 text-center">
-                <button
-                  id="forgotPasswordButton"
-                  theme="tertiary small forgot-password"
-                  on-click="_forgotPassword"
-                >
-                  Forgot Password
-                </button>
+                <Button variant="link">Forgot Password</Button>
               </div>
 
-              <div class="txt1 text-center p-t-5">
+              <div className="txt1 text-center p-t-5">
                 <span> Or Sign In Using </span>
               </div>
-              <div class="flex-c-m">
-                <a href="home" class="login100-social-item bg1">
-                  <i icon="vaadin:facebook"></i>
+              <div className="flex-c-m">
+                <a href="home" className="login100-social-item bg1">
+                  <FontAwesomeIcon icon={faFacebook} />
                 </a>
-                <a href="home" class="login100-social-item bg2">
-                  <i icon="vaadin:twitter"></i>
+                <a href="home" className="login100-social-item bg2">
+                  <FontAwesomeIcon icon={faTwitter} />
                 </a>
-                <a href="home" class="login100-social-item bg3">
-                  <i icon="vaadin:google-plus"></i>
+                <a href="home" className="login100-social-item bg3">
+                  <FontAwesomeIcon icon={faGoogle} />
                 </a>
               </div>
-              <div class="container signin">
+              <div className="container signin">
                 <p>
                   Don't have an account? <a href="signup">Sign Up</a>.
                 </p>
               </div>
-            </form>
+            </Form>
           </div>
         </div>
       </div>

@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid #000000;
+}
+
+#logo {
+  font-size: 25px;
+  color: #570c69;
+}
+
+.lsbtn {
+  float: right;
+}

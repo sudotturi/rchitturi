@@ -14,6 +14,7 @@
   -ms-align-items: center;
   align-items: center;
 }
+
 .text-center {
   text-align: center;
 }
@@ -36,7 +37,6 @@
 .login100-social-item {
   font-size: 25px;
   color: #fff;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -72,6 +72,7 @@
   -ms-align-items: center;
   align-items: center;
 }
+
 .p-t-50 {
   padding-top: 50px;
 }
@@ -108,6 +109,17 @@ hr {
 a {
   color: dodgerblue;
 }
+.pass-wrapper {
+  position: relative;
+}
+
+.pash {
+  position: absolute;
+  left: auto;
+  top: 40px;
+  text-indent: 32px;
+  right: 10px;
+}
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
@@ -134,19 +146,14 @@ a {
   background-position: center;
   background-size: cover;
 }
-input[type="text"],
-input[type="password"] {
+
+#loginButton {
   width: 100%;
-  margin: 6px 0;
-  padding: 10px 16px;
-  display: inline-block;
-  border: 1px solid #a9b3b6;
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
 .wrap-login100 {
-  max-width: 350px;
+  width: 350px;
   border: 1px solid black;
   border-radius: 5px;
   overflow: hidden;
@@ -157,10 +164,14 @@ input[type="password"] {
   border-radius: 5px;
   text-align: center;
   position: relative;
+  margin-bottom: 10px;
 }
+
 .error-message-title {
   color: #ff4545;
+  margin-top: 4px;
 }
+
 .error-message-description {
   color: #ff4545;
 }
