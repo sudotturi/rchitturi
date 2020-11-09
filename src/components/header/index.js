@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <div>
         <Navbar bg="white" className="header" expand="lg">
-          <Navbar.Brand href="home">
+          <Navbar.Brand onClick={() => history.push("/home")}>
             <div id="logo">
               <b id="C">{properties.projectsplitone}</b>
               <b id="HITTU">{properties.projectsplittwo}</b>

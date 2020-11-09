@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./login.css";
 import { InfoCircle } from "react-bootstrap-icons";
 import { Button, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import history from "../../utils/history";
 import {
   faFacebook,
   faTwitter,
@@ -75,19 +77,29 @@ class Login extends Component {
                 <span> Or Sign In Using </span>
               </div>
               <div className="flex-c-m">
-                <a href="home" className="login100-social-item bg1">
+                <Link
+                  onClick={() => history.push("/login")}
+                  className="login100-social-item bg1"
+                >
                   <FontAwesomeIcon icon={faFacebook} />
-                </a>
-                <a href="home" className="login100-social-item bg2">
+                </Link>
+                <Link
+                  onClick={() => history.push("/login")}
+                  className="login100-social-item bg2"
+                >
                   <FontAwesomeIcon icon={faTwitter} />
-                </a>
-                <a href="home" className="login100-social-item bg3">
+                </Link>
+                <Link
+                  onClick={() => history.push("/login")}
+                  className="login100-social-item bg3"
+                >
                   <FontAwesomeIcon icon={faGoogle} />
-                </a>
+                </Link>
               </div>
               <div className="container signin">
                 <p>
-                  Don't have an account? <a href="signup">Sign Up</a>.
+                  Don't have an account?{" "}
+                  <Link onClick={() => history.push("/signup")}>Sign Up</Link>.
                 </p>
               </div>
             </Form>

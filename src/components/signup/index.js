@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import history from "../../utils/history";
+import { Link } from "react-router-dom";
 const eye = <FontAwesomeIcon icon={faEye} />;
 const eyeSlash = <FontAwesomeIcon icon={faEyeSlash} />;
 class Signup extends Component {
@@ -64,14 +66,18 @@ class Signup extends Component {
                 <hr></hr>
                 <p>
                   By creating an account you agree to our{" "}
-                  <a href="home">Terms &amp; Privacy</a>.
+                  <Link onClick={() => history.push("/login")}>
+                    Terms &amp; Privacy
+                  </Link>
+                  .
                 </p>
                 <Button variant="primary" type="submit" id="loginButton">
                   Sign Up
                 </Button>
                 <div className="container signin">
                   <p>
-                    Already have an account? <a href="login">Sign in</a>.
+                    Already have an account?{" "}
+                    <Link onClick={() => history.push("/login")}>Sign in</Link>.
                   </p>
                 </div>
               </div>

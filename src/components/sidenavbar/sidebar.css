@@ -1,0 +1,6 @@
+.side {
+  width: auto;
+  display: inline-table;
+  border-right: 1px solid black;
+  min-height: calc(100vh - 70px);
+}

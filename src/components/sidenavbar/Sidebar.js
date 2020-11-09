@@ -1,12 +1,9 @@
 import React from "react";
 import { Sidenav, Nav, Dropdown, Icon } from "rsuite";
+import "./sidebar.css";
+// import { Card } from "react-bootstrap";
+
 import "rsuite/dist/styles/rsuite-default.css";
-const styles = {
-  width: "auto",
-  display: "inline-table",
-  marginRight: 10,
-  border: "1px solid"
-};
 
 class Sidebar extends React.Component {
   constructor() {
@@ -33,7 +30,7 @@ class Sidebar extends React.Component {
 
     return (
       <div>
-        <div style={styles}>
+        <div className="side">
           <Sidenav
             appearance="subtle"
             expanded={expanded}
@@ -50,7 +47,11 @@ class Sidebar extends React.Component {
                 >
                   {expanded ? "Minimize Menu" : "Expand Menu"}
                 </Nav.Item>
-                <Nav.Item eventKey="1" active icon={<Icon icon="dashboard" />}>
+
+                <Nav.Item eventKey="1" active icon={<Icon icon="home" />}>
+                  Home
+                </Nav.Item>
+                <Nav.Item eventKey="2" active icon={<Icon icon="dashboard" />}>
                   Dashboard
                 </Nav.Item>
                 <Nav.Item eventKey="3" icon={<Icon icon="group" />}>
