@@ -1,3 +1,6 @@
 export const properties = {
-  project: "Chitturi"
+  project: "ChittuRI",
+  projectsplitone: "C",
+  projectsplittwo: "HITTU",
+  projectsplitthree: "RI"
 };

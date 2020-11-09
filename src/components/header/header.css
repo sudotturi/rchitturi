@@ -3,10 +3,20 @@
 }
 
 #logo {
-  font-size: 25px;
-  color: #570c69;
+  font-size: 31px;
+  font-family: "Time New Roman";
+  background: -webkit-linear-gradient(rgb(90, 44, 44), rgb(17, 28, 90));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+#C {
+  font-size: 40px;
+}
+
+#RI {
+  font-size: 40px;
+}
 .lsbtn {
   float: right;
 }
