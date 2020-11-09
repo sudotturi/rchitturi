@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/rchitturi/static/css/main.1fb65ca3.chunk.css",
+    "main.js": "/rchitturi/static/js/main.1979325e.chunk.js",
+    "main.js.map": "/rchitturi/static/js/main.1979325e.chunk.js.map",
+    "runtime-main.js": "/rchitturi/static/js/runtime-main.2a842c64.js",
+    "runtime-main.js.map": "/rchitturi/static/js/runtime-main.2a842c64.js.map",
+    "static/css/2.da2b8a69.chunk.css": "/rchitturi/static/css/2.da2b8a69.chunk.css",
+    "static/js/2.85a9e294.chunk.js": "/rchitturi/static/js/2.85a9e294.chunk.js",
+    "static/js/2.85a9e294.chunk.js.map": "/rchitturi/static/js/2.85a9e294.chunk.js.map",
+    "index.html": "/rchitturi/index.html",
+    "precache-manifest.7a0484d36cc37f3b9581dd8f9b8dcb21.js": "/rchitturi/precache-manifest.7a0484d36cc37f3b9581dd8f9b8dcb21.js",
+    "service-worker.js": "/rchitturi/service-worker.js",
+    "static/css/2.da2b8a69.chunk.css.map": "/rchitturi/static/css/2.da2b8a69.chunk.css.map",
+    "static/css/main.1fb65ca3.chunk.css.map": "/rchitturi/static/css/main.1fb65ca3.chunk.css.map",
+    "static/js/2.85a9e294.chunk.js.LICENSE.txt": "/rchitturi/static/js/2.85a9e294.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a842c64.js",
+    "static/css/2.da2b8a69.chunk.css",
+    "static/js/2.85a9e294.chunk.js",
+    "static/css/main.1fb65ca3.chunk.css",
+    "static/js/main.1979325e.chunk.js"
+  ]
+}
