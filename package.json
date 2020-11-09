@@ -1,5 +1,5 @@
 {
-  "homepage": "http://rahul2309.github.io/rchitturi",
+  "homepage": "https://rahul2309.github.io/rchitturi/",
   "name": "react",
   "version": "1.0.0",
   "description": "React example starter project",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "typescript": "3.8.3",
-    "gh-pages": "^2.1.1"
+    "gh-pages": "3.1.0"
   },
   "scripts": {
     "predeploy": "npm run build",
