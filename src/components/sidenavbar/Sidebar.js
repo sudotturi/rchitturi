@@ -1,5 +1,5 @@
 import React from "react";
-import { Sidenav, Nav, Dropdown, Icon, Toggle } from "rsuite";
+import { Sidenav, Nav, Dropdown, Icon } from "rsuite";
 import "rsuite/dist/styles/rsuite-default.css";
 const styles = {
   width: "auto",
