@@ -3,7 +3,6 @@ import "./header.css";
 import { properties } from "../../utils/properties";
 import { Button, Form, Nav, Navbar } from "react-bootstrap";
 import history from "../../utils/history";
-import logo from "../../resources/images/icon-logo.PNG";
 class Header extends Component {
   render() {
     return (
