@@ -1,7 +1,7 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "description": "React example starter project",
+  "description": "rchitturi starter project",
   "keywords": ["react", "starter"],
   "main": "src/index.js",
   "dependencies": {
@@ -24,12 +24,9 @@
     "rsuite": "4.8.4"
   },
   "devDependencies": {
-    "typescript": "3.8.3",
-    "gh-pages": "3.1.0"
+    "typescript": "3.8.3"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
