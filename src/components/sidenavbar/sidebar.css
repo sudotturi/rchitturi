@@ -1,6 +1,34 @@
 .side {
-  width: auto;
-  display: inline-table;
-  border-right: 1px solid black;
-  min-height: calc(100vh - 70px);
+  position: relative;
+  min-height: calc(100vh - 56px);
+  float: left;
+}
+
+.bg-con {
+  background-color: #f2f7f0;
+}
+.btm {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.logopro {
+  font-size: 20px;
+  font-family: "Time New Roman";
+}
+
+.C {
+  font-size: 30px;
+}
+
+.RI {
+  font-size: 30px;
+}
+
+.logoimg {
+  padding-top: 10px;
+  margin-left: 7px;
+  width: 20px;
+  float: left;
 }

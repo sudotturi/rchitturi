@@ -1,13 +1,25 @@
 .header {
-  border-bottom: 1px solid #000000;
+  min-height: 56px;
 }
 
 #logo {
-  font-size: 20px;
-  font-family: "Time New Roman";
-  background: -webkit-linear-gradient(rgb(90, 44, 44), rgb(17, 28, 90));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  #logo {
+    font-size: 20px;
+    display: block;
+    font-family: "Time New Roman";
+    margin-top: 4px;
+    background: -webkit-linear-gradient(rgb(90, 44, 44), rgb(17, 28, 90));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header {
+    flex-wrap: wrap;
+    align-content: center;
+  }
 }
 
 #C {
@@ -16,7 +28,4 @@
 
 #RI {
   font-size: 30px;
-}
-.lsbtn {
-  float: right;
 }

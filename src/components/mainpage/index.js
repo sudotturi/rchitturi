@@ -1,15 +1,23 @@
 import React, { Component } from "react";
 import "./main.css";
-import Sidebar from "../sidenavbar/Sidebar";
-import Header from "../header";
-
+import Sidebarnav from "../sidenavbar/index";
+import Headerbar from "../header";
+import Routes from "../../utils/Routes";
+import { Container, Header } from "rsuite";
 class Main extends Component {
   render() {
     return (
-      <div>
-        <Header />
-        <Sidebar />
-      </div>
+      <Container class="main">
+        <Sidebarnav />
+        <Container>
+          <Header>
+            <Headerbar />
+          </Header>
+          <Container className="scr">
+            <Routes />
+          </Container>
+        </Container>
+      </Container>
     );
   }
 }

@@ -1,0 +1,12 @@
+.main {
+  height: 100vh;
+}
+
+.sidebarwidth {
+  width: 1px;
+}
+
+.scr {
+  overflow: auto;
+  height: 90vh;
+}
