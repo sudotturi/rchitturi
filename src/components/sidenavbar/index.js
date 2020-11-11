@@ -1,5 +1,5 @@
 import React from "react";
-import { Sidenav, Sidebar, Nav, Navbar, Dropdown, Icon, Footer } from "rsuite";
+import { Sidenav, Sidebar, Nav, Navbar, Dropdown, Icon } from "rsuite";
 import "./sidebar.css";
 import { properties } from "../../utils/properties";
 import "rsuite/dist/styles/rsuite-default.css";
