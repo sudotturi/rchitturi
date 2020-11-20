@@ -3,7 +3,7 @@ import "./header.css";
 import { properties } from "../../utils/properties";
 import { Card } from "react-bootstrap";
 import history from "../../utils/history";
-import { Header, Drawer, Button, Icon } from "rsuite";
+import { Header, Drawer, Icon } from "rsuite";
 
 class Headerbar extends Component {
   constructor(props) {
