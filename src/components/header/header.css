@@ -1,7 +1,9 @@
 .header {
   min-height: 56px;
 }
-
+.togglebutton {
+  display: none;
+}
 #logo {
   display: none;
 }
@@ -19,9 +21,23 @@
   .header {
     flex-wrap: wrap;
     align-content: center;
+    position: relative;
+  }
+  .togglebutton {
+    display: block;
+    margin-left: 15px;
+    width: auto;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
-
+.tog {
+  width: 20px;
+}
 #C {
   font-size: 30px;
 }
