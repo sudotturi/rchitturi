@@ -46,10 +46,7 @@ class Headerbar extends Component {
           onHide={this.close}
           className="tog"
         >
-          <Drawer.Header>
-            <Drawer.Title>Drawer Title</Drawer.Title>
-          </Drawer.Header>
-          <Drawer.Body></Drawer.Body>
+          
         </Drawer>
       </Header>
     );
