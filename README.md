@@ -1,5 +1,5 @@
 <div align="center">
-<img alt="Portfolio" src="https://github.com/RahulChitturi/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
+<img alt="Portfolio" src="https://github.com/sudotturi/rchitturi/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
 </div>
 
 # Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRahulChitturi%2Fportfolio)
@@ -9,8 +9,7 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 # Features
 
 - Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
+- Built using Next.js 15, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
 - Responsive for different devices
 - Optimized for Next.js and Vercel
 
@@ -19,13 +18,13 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/RahulChitturi/portfolio
+   git clone https://github.com/sudotturi/rchitturi
    ```
 
 2. Move to the cloned directory
 
    ```bash
-   cd portfolio
+   cd rchitturi
    ```
 
 3. Install dependencies:
@@ -44,4 +43,4 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 
 # License
 
-Licensed under the [MIT license](https://github.com/RahulChitturi/portfolio/blob/main/LICENSE.md).
+Licensed under the [MIT license](https://github.com/sudotturi/rchitturi/blob/main/LICENSE.md).
