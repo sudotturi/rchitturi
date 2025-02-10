@@ -18,11 +18,11 @@ export default function Page() {
     email: "",
     message: "",
   });
-  const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState(null);
+  const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
+  const [status, setStatus] = useState<"loading" | "success" | "error" | null>(null);
 
   const validate = () => {
-    let newErrors = {};
+    let newErrors: { name?: string; email?: string; message?: string } = {};
 
     if (!formData.name.trim()) {
       newErrors.name = "Name is required.";
@@ -44,22 +44,20 @@ export default function Page() {
     return Object.keys(newErrors).length === 0; // Returns true if no errors
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: "" }); // Clear errors on input
   };
 
   const handleSendMessage = async () => {
-    if (!validate()) return; // Stop if validation fails
+    if (!validate()) return;
 
     setStatus("loading");
 
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
@@ -68,11 +66,19 @@ export default function Page() {
       if (response.ok) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
+
+        // Hide success message after 5 seconds
+        setTimeout(() => setStatus(null), 5000);
       } else {
         setStatus("error");
+
+        // Hide error message after 5 seconds
+        setTimeout(() => setStatus(null), 5000);
       }
     } catch (error) {
       setStatus("error");
+
+      setTimeout(() => setStatus(null), 5000);
     }
   };
 
@@ -205,7 +211,6 @@ export default function Page() {
                   key={project.title}
                   title={project.title}
                   description={project.description}
-                  dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
                   video={project.video}
@@ -287,7 +292,7 @@ export default function Page() {
             {status === "success" && (
               <p className="mt-3 text-green-600 font-semibold bg-green-100 p-3 rounded-lg border border-green-400">
                 🎉 Thank you, {formData.name || "there"}! Your message has been
-                sent successfully. I'll get back to you soon! 🚀
+                sent successfully. I&apos;ll get back to you soon! 🚀
               </p>
             )}
 
