@@ -1,5 +1,5 @@
 <div align="center">
-<img alt="Portfolio" src="https://github.com/sudotturi/rchitturi/public/ss.png" width="90%">
+<img alt="Portfolio" src="https://github.com/sudotturi/rchitturi/blob/main/public/ss.png" width="90%">
 </div>
 
 Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
